@@ -1,5 +1,5 @@
 """
-Seva First Innovation - Entry Point
+SKILL2HIRE - Entry Point
 """
 import os
 from app import create_app

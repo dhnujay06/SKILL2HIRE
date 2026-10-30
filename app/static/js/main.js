@@ -1,5 +1,5 @@
 /**
- * Seva First Innovation — Main JavaScript
+ * SKILL2HIRE — Main JavaScript
  * Save/Unsave jobs, notifications, UI enhancements
  */
 

@@ -1,5 +1,5 @@
 """
-Seva First Innovation - Extensions Module
+SKILL2HIRE - Extensions Module
 Initialize Flask extensions here to avoid circular imports.
 """
 from flask_sqlalchemy import SQLAlchemy

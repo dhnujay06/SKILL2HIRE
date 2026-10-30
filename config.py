@@ -1,5 +1,5 @@
 """
-Seva First Innovation - Configuration Module
+SKILL2HIRE - Configuration Module
 """
 import os
 from dotenv import load_dotenv
@@ -44,7 +44,9 @@ class DevelopmentConfig(Config):
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = os.environ.get(
         'DATABASE_URL',
-        'sqlite:///' + os.path.join(BASE_DIR, 'instance', 'seva_first.db')
+        'sqlite:///' + os.path.join(BASE_DIR, 'instance', 'skill2hire.db')
+        if os.path.exists(os.path.join(BASE_DIR, 'instance', 'skill2hire.db'))
+        else 'sqlite:///' + os.path.join(BASE_DIR, 'instance', 'seva_first.db')
     )
 
 
@@ -62,7 +64,12 @@ class ProductionConfig(Config):
     _db_url = os.environ.get('DATABASE_URL')
     if _db_url and _db_url.startswith('postgres://'):
         _db_url = _db_url.replace('postgres://', 'postgresql://', 1)
-    SQLALCHEMY_DATABASE_URI = _db_url or ('sqlite:///' + os.path.join(BASE_DIR, 'instance', 'seva_first.db'))
+    _default_db = (
+        'sqlite:///' + os.path.join(BASE_DIR, 'instance', 'skill2hire.db')
+        if os.path.exists(os.path.join(BASE_DIR, 'instance', 'skill2hire.db'))
+        else 'sqlite:///' + os.path.join(BASE_DIR, 'instance', 'seva_first.db')
+    )
+    SQLALCHEMY_DATABASE_URI = _db_url or _default_db
 
 
 config = {

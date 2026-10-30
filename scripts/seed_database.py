@@ -1,5 +1,5 @@
 """
-Seva First Innovation - Database Seeder
+SKILL2HIRE - Database Seeder
 Seeds users, employers, verification requests, jobs, applications, and fraud reports.
 """
 import os
@@ -33,19 +33,20 @@ def seed_database():
         logger.info("Initializing database schema...")
         db.create_all()
 
-        # 1. Admin User
-        admin = User.query.filter_by(email='admin@sevafirst.org').first()
-        if not admin:
-            admin = User(
-                full_name='Seva System Administrator',
-                email='admin@sevafirst.org',
-                email_normalized='admin@sevafirst.org',
-                role=UserRole.ADMIN,
-                account_status=AccountStatus.ACTIVE
-            )
-            admin.set_password('Admin@12345')
-            db.session.add(admin)
-            logger.info("Created Admin user: admin@sevafirst.org")
+        # 1. Admin Users (SKILL2HIRE Platform Admins)
+        for admin_email in ['admin@skill2hire.com', 'admin@sevafirst.org']:
+            admin = User.query.filter_by(email=admin_email).first()
+            if not admin:
+                admin = User(
+                    full_name='SKILL2HIRE Administrator',
+                    email=admin_email,
+                    email_normalized=admin_email,
+                    role=UserRole.ADMIN,
+                    account_status=AccountStatus.ACTIVE
+                )
+                admin.set_password('Admin@12345')
+                db.session.add(admin)
+                logger.info(f"Created Admin user: {admin_email}")
 
         # 2. Verified Employers
         employers_data = [

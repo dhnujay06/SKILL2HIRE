@@ -1,5 +1,5 @@
 """
-Seva First Innovation - Dataset Ingestion & Processing Pipeline
+SKILL2HIRE - Dataset Ingestion & Processing Pipeline
 Cleans, normalizes, extracts skills, and loads benchmark job listings.
 """
 import os
@@ -141,7 +141,7 @@ RAW_JOBS = [
 
 
 def run_pipeline():
-    logger.info("Starting Seva First Innovation Dataset Processing Pipeline...")
+    logger.info("Starting SKILL2HIRE Dataset Processing Pipeline...")
 
     base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
     raw_dir = os.path.join(base_dir, 'data', 'raw')

@@ -37,7 +37,7 @@ All accounts come pre-configured with realistic profiles, resumes, postings, and
 
 | Role | Email | Password | Details |
 | :--- | :--- | :--- | :--- |
-| **Platform Administrator** | `admin@sevafirst.org` | `Admin@12345` | Full administrative control, verification queues, fraud incident response, and dataset pipeline telemetry |
+| **Platform Administrator** | `admin@skill2hire.com` | `Admin@12345` | Full administrative control, verification queues, fraud incident response, and dataset pipeline telemetry |
 | **Verified Employer (TCS)** | `hr@tataconsultancy.com` | `Employer@12345` | Tata Consultancy Services (MCA CIN & GSTIN verified) |
 | **Verified Employer (Infosys)**| `careers@infosys.com` | `Employer@12345` | Infosys Limited (Verified badge, open React jobs) |
 | **Verified Employer (Flipkart)**| `talent@flipkart.com` | `Employer@12345` | Flipkart Internet (Verified badge, open AI/ML jobs) |

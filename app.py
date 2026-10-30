@@ -1,5 +1,5 @@
 """
-Seva First Innovation - Application Factory
+SKILL2HIRE - Application Factory
 """
 import os
 import logging
