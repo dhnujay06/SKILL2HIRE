@@ -6,7 +6,7 @@ Unit tests for public routes and informational pages.
 def test_home_page(client):
     response = client.get('/')
     assert response.status_code == 200
-    assert b'Seva First Innovation' in response.data
+    assert b'SKILL2HIRE' in response.data
 
 
 def test_jobs_page(client):
@@ -42,16 +42,16 @@ def test_company_details(client):
 def test_about_page(client):
     response = client.get('/about')
     assert response.status_code == 200
-    assert b'About Seva First Innovation' in response.data
+    assert b'About SKILL2HIRE' in response.data
 
 
 def test_how_it_works_page(client):
     response = client.get('/how-it-works')
     assert response.status_code == 200
-    assert b'How Seva First Innovation Works' in response.data
+    assert b'How SKILL2HIRE Works' in response.data
 
 
 def test_contact_page(client):
     response = client.get('/contact')
     assert response.status_code == 200
-    assert b'Contact Seva First Innovation' in response.data
+    assert b'Contact SKILL2HIRE' in response.data

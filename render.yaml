@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: seva-first-innovation
+    name: skill2hire
     env: python
     region: oregon
     plan: free

@@ -1,4 +1,4 @@
-# Seva First Innovation (SFI)
+# SKILL2HIRE
 ## Intelligent Employer–Job Seeker Matchmaking and Verified Employment Connections
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
@@ -10,7 +10,7 @@
 
 ## 📌 Executive Summary
 
-**Seva First Innovation** is an enterprise-grade, full-stack recruitment and employment matchmaking platform tailored to solve the two-sided trust crisis in employment:
+**SKILL2HIRE** is an enterprise-grade, full-stack recruitment and employment matchmaking platform tailored to solve the two-sided trust crisis in employment:
 1. **For Job Seekers**: Eliminates ghost postings, recruitment fraud, and unverified middlemen by displaying only audited, verified enterprises and providing transparent AI compatibility scores.
 2. **For Employers**: Streamlines candidate evaluation using NLP-powered skill parsing, semantic matchmaking, and structured applicant funnels.
 3. **For Administrators**: Provides live telemetry on dataset ingestion pipelines, pending corporate verification audits, and community fraud alerts.
